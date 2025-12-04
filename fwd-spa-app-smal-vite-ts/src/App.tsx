@@ -3,7 +3,6 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contacts from "./pages/Contacts";
-import NotFound from "./pages/NotFound";
 import logo from "./assets/logo.png";
 
 const App: React.FC = () => {
@@ -34,7 +33,7 @@ const App: React.FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
           {/* 404 catch-all route */}
-          <Route path="*" element={<NotFound />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </main>
 
